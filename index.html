@@ -88,14 +88,23 @@
             margin: 0;
         }
 
-        .fixed-button {
+        /* .fixed-button {
             width: 100%;
-            /* height: 57.46px; */
             border-radius: 38.31px;
             opacity: 1;
             font-size: 14px;
-            /* Your desired font size */
-        }
+        } */
+        .fixed-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left */
+  gap: 8px;
+  width: 100%;
+  height: 57.46px;
+  border-radius: 38.31px;
+  font-size: 14px;      /* Desktop default font size */
+  padding-left: 20px;   /* Optional: adds space between left edge and content */
+}
 
         .btn-custom-red {
   background-color: #B40C0F;
