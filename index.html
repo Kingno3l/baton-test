@@ -95,52 +95,56 @@
             font-size: 14px;
         } */
         .fixed-button {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* Align content to the left */
-  gap: 8px;
-  width: 100%;
-  height: 57.46px;
-  border-radius: 38.31px;
-  font-size: 14px;      /* Desktop default font size */
-  padding-left: 20px;   /* Optional: adds space between left edge and content */
-}
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            /* Align content to the left */
+            gap: 8px;
+            width: 100%;
+            height: 57.46px;
+            border-radius: 38.31px;
+            font-size: 14px;
+            /* Desktop default font size */
+            padding-left: 20px;
+            /* Optional: adds space between left edge and content */
+        }
 
         .btn-custom-red {
-  background-color: #B40C0F;
-  color: #fff;
-  border: none;
-}
+            background-color: #B40C0F;
+            color: #fff;
+            border: none;
+        }
 
-.btn-custom-red:hover,
-.btn-custom-red:focus {
-  background-color: #990b0d; /* A slightly darker shade for hover */
-  color: #fff;
-}
+        .btn-custom-red:hover,
+        .btn-custom-red:focus {
+            background-color: #990b0d;
+            /* A slightly darker shade for hover */
+            color: #fff;
+        }
 
-.btn-custom-red {
-  background-color: #700002;
-  color: #fff;
-  border: none;
-}
+        .btn-custom-red {
+            background-color: #700002;
+            color: #fff;
+            border: none;
+        }
 
-.btn-custom-gray {
-  background-color: #666666;
-  color: #fff;
-  border: none;
-}
+        .btn-custom-gray {
+            background-color: #666666;
+            color: #fff;
+            border: none;
+        }
 
-.btn-custom-black {
-  background-color: #171219;
-  color: #fff;
-  border: none;
-}
+        .btn-custom-black {
+            background-color: #171219;
+            color: #fff;
+            border: none;
+        }
 
-.btn-custom-red:hover,
-.btn-custom-gray:hover,
-.btn-custom-black:hover {
-  opacity: 0.9;
-}
+        .btn-custom-red:hover,
+        .btn-custom-gray:hover,
+        .btn-custom-black:hover {
+            opacity: 0.9;
+        }
 
 
 
@@ -182,9 +186,21 @@
                 padding-top: 30px;
             }
 
-            .search-text{
+            .search-text {
                 font-size: 12px;
+                max-width: 219px;
+                margin: 0 auto;
+                text-align: center;
+                padding-top: 5px;
             }
+
+
+            .logo-img {
+                max-height: 32px;
+            }
+
+
+
 
 
         }
@@ -204,10 +220,7 @@
                 /* Black */
                 font-size: 54.36px;
             }
-        }
 
-        /* Desktop: Transparent background */
-        @media (min-width: 768px) {
             .reliable-banner {
                 background-color: transparent;
                 color: #000;
@@ -238,7 +251,7 @@
 
     <!-- Logo and Tagline -->
     <div class="text-center my-4">
-        <img src="logo.svg" alt="BATON Logo" class="img-fluid" style="max-height: 60px;">
+        <img src="logo.svg" alt="BATON Logo" class="logo-img img-fluid">
         <p class="fw-semibold search-text">The Ultimate Search Engine For Reliable Service Providers</p>
     </div>
 
@@ -266,17 +279,17 @@
                 <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-2">
 
 
-                <button class="btn btn-custom-red fixed-button">
-                    <img src="vector1.png" alt="Refer Icon" class="me-2">Refer a Service Provider
-                </button>
-                
-                <button class="btn btn-custom-gray fixed-button">
-                    <img src="vector2.png" alt="Report Icon" class="me-2">Report Scammers
-                </button>
-                
-                <button class="btn btn-custom-black fixed-button">
-                    <img src="vector3.png" alt="Register Icon" class="me-2">Register as a Service Provider
-                </button>
+                    <button class="btn btn-custom-red fixed-button">
+                        <img src="vector1.png" alt="Refer Icon" class="me-2">Refer a Service Provider
+                    </button>
+
+                    <button class="btn btn-custom-gray fixed-button">
+                        <img src="vector2.png" alt="Report Icon" class="me-2">Report Scammers
+                    </button>
+
+                    <button class="btn btn-custom-black fixed-button">
+                        <img src="vector3.png" alt="Register Icon" class="me-2">Register as a Service Provider
+                    </button>
 
 
 
