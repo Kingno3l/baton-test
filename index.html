@@ -69,14 +69,70 @@
             padding: 1rem;
         }
 
+        .reliable-banner h5 {
+            font-family: 'Amiko', sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 100%;
+            letter-spacing: 0;
+            vertical-align: middle;
+            margin-bottom: 0.25rem;
+        }
+
+        .reliable-banner h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            line-height: 100%;
+            letter-spacing: 0;
+            vertical-align: middle;
+            margin: 0;
+        }
+
         .fixed-button {
             width: 100%;
-            height: 57.46px;
+            /* height: 57.46px; */
             border-radius: 38.31px;
             opacity: 1;
             font-size: 14px;
             /* Your desired font size */
         }
+
+        .btn-custom-red {
+  background-color: #B40C0F;
+  color: #fff;
+  border: none;
+}
+
+.btn-custom-red:hover,
+.btn-custom-red:focus {
+  background-color: #990b0d; /* A slightly darker shade for hover */
+  color: #fff;
+}
+
+.btn-custom-red {
+  background-color: #700002;
+  color: #fff;
+  border: none;
+}
+
+.btn-custom-gray {
+  background-color: #666666;
+  color: #fff;
+  border: none;
+}
+
+.btn-custom-black {
+  background-color: #171219;
+  color: #fff;
+  border: none;
+}
+
+.btn-custom-red:hover,
+.btn-custom-gray:hover,
+.btn-custom-black:hover {
+  opacity: 0.9;
+}
+
 
 
         /* Mobile: Black background */
@@ -87,14 +143,17 @@
             }
 
             .reliable-banner h5 {
-                color: red;
-                font-size: 0.85rem;
+                color: rgb(255, 255, 255);
                 margin-bottom: 0.25rem;
+                font-size: 12px;
             }
 
             .reliable-banner h2 {
-                font-size: 1.75rem;
+                /* font-size: 1.75rem;
+                font-weight: 800; */
                 font-weight: 800;
+                /* ExtraBold */
+                font-size: 32px;
             }
 
             .btn {
@@ -121,6 +180,16 @@
             .fixed-button {
                 width: 318.93px;
                 /* Apply fixed width only on medium+ screens */
+            }
+
+            .reliable-banner h5 {
+                font-size: 24px;
+            }
+
+            .reliable-banner h2 {
+                font-weight: 900;
+                /* Black */
+                font-size: 54.36px;
             }
         }
 
@@ -150,12 +219,13 @@
     <!-- Header Buttons -->
     <div class="d-flex justify-content-between align-items-center mb-3">
         <button class="btn btn-custom-outline">Invite Others</button>
-        <button class="btn btn-danger rounded-3 px-4">Sign Up</button>
+        <button class="btn btn-custom-red rounded-3 px-4">Sign Up</button>
+
     </div>
 
     <!-- Logo and Tagline -->
     <div class="text-center my-4">
-<img src="logo.svg" alt="BATON Logo" class="img-fluid" style="max-height: 60px;">
+        <img src="logo.svg" alt="BATON Logo" class="img-fluid" style="max-height: 60px;">
         <p class="fw-semibold">The Ultimate Search Engine For Reliable Service Providers</p>
     </div>
 
@@ -172,7 +242,7 @@
                 <div class="d-flex align-items-center search-bar bg-white mt-2">
                     <i class="bi bi-search search-icon me-2"></i>
                     <input type="text" class="form-control shadow-none" placeholder="What service do you need?" />
-                    
+
                 </div>
             </div>
         </div>
@@ -181,19 +251,20 @@
         <div class="row justify-content-center mt-3">
             <div class="col-lg-8 col-md-10 col-12">
                 <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-2">
-                   
 
-                    <button class="btn btn-red fixed-button">
-                        <img src="vector1.png" alt="Refer Icon" class="me-2" >Refer a Service Provider
-                    </button>
-                    
-                    <button class="btn btn-gray fixed-button">
-                        <img src="vector2.png" alt="Report Icon" class="me-2" >Report Scammers
-                    </button>
-                    
-                    <button class="btn btn-black fixed-button">
-                        <img src="vector3.png" alt="Register Icon" class="me-2" >Register as a Service Provider
-                    </button>
+
+                <button class="btn btn-custom-red fixed-button">
+                    <img src="vector1.png" alt="Refer Icon" class="me-2">Refer a Service Provider
+                </button>
+                
+                <button class="btn btn-custom-gray fixed-button">
+                    <img src="vector2.png" alt="Report Icon" class="me-2">Report Scammers
+                </button>
+                
+                <button class="btn btn-custom-black fixed-button">
+                    <img src="vector3.png" alt="Register Icon" class="me-2">Register as a Service Provider
+                </button>
+
 
 
                 </div>
