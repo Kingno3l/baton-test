@@ -115,10 +115,8 @@
             border: none;
         }
 
-        .btn-custom-red:hover,
         .btn-custom-red:focus {
             background-color: #990b0d;
-            /* A slightly darker shade for hover */
             color: #fff;
         }
 
@@ -147,25 +145,26 @@
         }
 
         /* Fix spacing between icon and text in buttons */
-.fixed-button img {
-    height: 20px;
-    width: 20px;
-    object-fit: contain;
-}
+        .fixed-button img {
+            height: 20px;
+            width: 20px;
+            object-fit: contain;
+        }
 
-/* Ensure uniform width for all buttons */
-.fixed-button {
-    flex: 1;
-    min-width: 180px; /* Prevent squishing on smaller screens */
-    justify-content: center;
-}
+        /* Ensure uniform width for all buttons */
+        .fixed-button {
+            flex: 1;
+            min-width: 180px;
+            /* Prevent squishing on smaller screens */
+            justify-content: center;
+        }
 
-/* Add red border on input focus */
-.search-bar input:focus {
-    border: 2px solid #a00000;
-    border-radius: 40px;
-    outline: none;
-}
+        /* Add red border on input focus */
+        .search-bar input:focus {
+            border: 2px solid #a00000;
+            border-radius: 40px;
+            outline: none;
+        }
 
 
 
@@ -184,10 +183,7 @@
             }
 
             .reliable-banner h2 {
-                /* font-size: 1.75rem;
-                font-weight: 800; */
                 font-weight: 800;
-                /* ExtraBold */
                 font-size: 32px;
             }
 
@@ -199,8 +195,20 @@
                 height: 60px;
             }
 
-            .search-bar {
+            /* .search-bar {
                 height: 60px;
+            } */
+
+            .search-bar {
+                padding-left: 8px;
+            }
+
+            .search-bar input {
+                padding-left: 4px;
+            }
+
+            .search-icon {
+                margin-right: 6px;
             }
 
             .brand {
@@ -222,15 +230,12 @@
             }
 
 
-            .btn-custom-outline,
-            .btn-custom-red {
-                font-size: 12px !important;
-            }
+
 
             .location-service {
                 font-size: 10px;
                 line-height: 1.2;
-               
+
             }
 
         }
@@ -267,7 +272,6 @@
                 font-weight: 800;
             }
         }
-
     </style>
 </head>
 
@@ -295,12 +299,12 @@
                     <span class="me-auto">Your Location</span>
                     <span class="ms-auto"><i class="bi bi-list"></i> Service List</span>
                 </div>
-<form>
-                <div class="d-flex align-items-center search-bar bg-white mt-2">
-                    <i class="bi bi-search search-icon me-2"></i>
-                    <input type="text" class="form-control shadow-none" placeholder="What service do you need?" />
+                <form>
+                    <div class="d-flex align-items-center search-bar bg-white mt-2">
+                        <i class="bi bi-search search-icon me-2"></i>
+                        <input type="text" class="form-control shadow-none" placeholder="What service do you need?" />
 
-                </div>
+                    </div>
 
                 </form>
             </div>
