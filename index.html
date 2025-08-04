@@ -146,6 +146,28 @@
             opacity: 0.9;
         }
 
+        /* Fix spacing between icon and text in buttons */
+.fixed-button img {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+}
+
+/* Ensure uniform width for all buttons */
+.fixed-button {
+    flex: 1;
+    min-width: 180px; /* Prevent squishing on smaller screens */
+    justify-content: center;
+}
+
+/* Add red border on input focus */
+.search-bar input:focus {
+    border: 2px solid #a00000;
+    border-radius: 40px;
+    outline: none;
+}
+
+
 
 
         /* Mobile: Black background */
@@ -245,6 +267,7 @@
                 font-weight: 800;
             }
         }
+
     </style>
 </head>
 
@@ -264,7 +287,7 @@
     </div>
 
     <!-- Search Bar -->
-    <div class="container">
+    <div class="">
         <div class="row justify-content-center mb-3">
             <div class="col-lg-8 col-md-10 col-12">
                 <div class="d-flex align-items-center p-2 bg-white location-service">
@@ -272,12 +295,14 @@
                     <span class="me-auto">Your Location</span>
                     <span class="ms-auto"><i class="bi bi-list"></i> Service List</span>
                 </div>
-
+<form>
                 <div class="d-flex align-items-center search-bar bg-white mt-2">
                     <i class="bi bi-search search-icon me-2"></i>
                     <input type="text" class="form-control shadow-none" placeholder="What service do you need?" />
 
                 </div>
+
+                </form>
             </div>
         </div>
 
